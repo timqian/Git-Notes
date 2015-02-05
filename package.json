@@ -1,0 +1,34 @@
+{
+  "name": "react-webpack-gulp-starter",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "gulp dev",
+    "release": "NODE_ENV=production gulp release",
+    "test": "jest"
+  },
+  "jest": {
+    "testDirectoryName": "tests",
+    "testFileExtensions": ["js", "jsx"],
+    "scriptPreprocessor": "<rootDir>/tests/preprocessor.js",
+    "testPathIgnorePatterns": ["/node_modules/", "preprocessor.js"],
+    "unmockedModulePathPatterns": ["<rootDir>/node_modules/react"]
+  },
+  "devDependencies": {
+    "css-loader": "^0.9.1",
+    "extract-text-webpack-plugin": "^0.3.8",
+    "gulp": "^3.8.10",
+    "gulp-util": "^3.0.3",
+    "jest-cli": "^0.2.2",
+    "jsx-loader": "^0.12.2",
+    "react-hot-loader": "^1.1.4",
+    "react-tools": "^0.12.2",
+    "require-dir": "^0.1.0",
+    "style-loader": "^0.8.3",
+    "webpack": "^1.5.3",
+    "webpack-dev-server": "^1.7.0"
+  },
+  "dependencies": {
+    "react": "^0.12.2"
+  }
+}
