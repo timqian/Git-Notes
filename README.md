@@ -3,7 +3,7 @@
 One of the billion other custom starters out there.
 
 
-*Note: Your desired **Flux** implementation can be easily mixed in (using [http://martyjs.org/](martyjs) as an example): `npm install --save marty`*
+Note: Your desired **Flux** implementation can be easily mixed in (using [martyjs](http://martyjs.org/) as an example): `npm install --save marty`
 
 **Structure**
 ```
@@ -34,7 +34,7 @@ root
 
 **Tests**
 
-The starter is set up for [https://facebook.github.io/jest/](Jest) (have a look at `package.json.jest`). Put your tests inside `/tests` and run `npm test`.
+The starter is set up for [Jest](https://facebook.github.io/jest/) (have a look at `package.json.jest`). Put your tests inside `/tests` and run `npm test`.
 
 *Note: The test preprocessor `/tests/preprocessor.js` is set up to process the files with the .jsx extension as JSX and ignore .css files.*
 
@@ -45,7 +45,7 @@ Run `npm run dev`. This command creates a `/dist` folder containing:
 - `/src/index.html`
 - All the assets under `/src/assets`
 
-It also runs [http://webpack.github.io/docs/webpack-dev-server.html](webpack-dev-server) on `localhost:3000` with [https://github.com/gaearon/react-hot-loader](react-hot-loader)
+It also runs [webpack-dev-server](http://webpack.github.io/docs/webpack-dev-server.html) on [localhost:3000](http://localhost:3000) with [react-hot-loader](https://github.com/gaearon/react-hot-loader)
 
 *Note: The JSX loader for webpack `/tasks/webpack/webpack.config.js` is set up to process the files with the .jsx extension.*
 
