@@ -3,7 +3,9 @@
 One of the billion other custom starters out there.
 
 
-Note: Your desired **Flux** implementation can be easily mixed in (using [martyjs](http://martyjs.org/) as an example): `npm install --save marty`
+Note: Your desired **Flux** implementation can be easily mixed in (using [martyjs](http://martyjs.org/) as an example): 
+
+    npm install --save marty
 
 **Structure**
 ```
