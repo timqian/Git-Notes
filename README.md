@@ -18,7 +18,7 @@ root
 │  └──assets
 ├──tests
 │  └──preprocessor.js - JSX preprocessor for tests
-├──tasks
+└──tasks
    └──webpack
       └──webpack.config.js - Webpack configuration
 ```
