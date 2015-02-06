@@ -10,21 +10,17 @@ Note: Your desired **Flux** implementation can be easily mixed in (using [martyj
 **Structure**
 ```
 root
-│   package.json - Contains the Jest configuration, dev and production dependencies
-│   gulpfile.js - Loads tasks inside /tasks
-└───src
-    │   index.html
-    │   index.js - Application main
-    │   ...
-    ├───assets
-    tests
-    │   preprocessor.js - JSX preprocessor for tests
-    │   ...
-    tasks
-    │   ...
-    ├───webpack
-    │      webpack.config.js - Webpack configuration
-    │      ...
+├──package.json - Contains the Jest configuration, dev and production dependencies
+├──gulpfile.js - Loads tasks inside /tasks
+├──src
+│  ├──index.html
+│  ├──index.js - Application main
+│  └──assets
+├──tests
+│  └──preprocessor.js - JSX preprocessor for tests
+├──tasks
+│  └──webpack
+│     └──webpack.config.js - Webpack configuration
 ```
 
 **Setup**
