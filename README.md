@@ -1,7 +1,11 @@
-**react-webpack-gulp-starter**
+**react-webpack-gulp-starter** - One of the billion other custom starters out there.
 
-One of the billion other custom starters out there.
+**Setup**
 
+1. Clone (or download)
+2. Install Gulp globally `npm install -g gulp` (may require admin rights)
+2. Under project root, run `npm install`
+3. That's it!
 
 Note: Your desired **Flux** implementation can be easily mixed in (using [martyjs](http://martyjs.org/) as an example): 
 
@@ -22,13 +26,6 @@ root
    └──webpack
       └──webpack.config.js - Webpack configuration
 ```
-
-**Setup**
-
-1. Clone (or download)
-2. Install Gulp globally `npm install -g gulp` (may require admin rights)
-2. Under project root, run `npm install`
-3. That's it!
 
 **Tests**
 
