@@ -7,7 +7,7 @@
 2. Under project root, run `npm install`
 3. That's it!
 
-Note: Your desired **Flux** implementation can be easily mixed in (using [martyjs](http://martyjs.org/) as an example): 
+Note: Your desired **Flux** implementation can be easily mixed in (using [martyjs](http://martyjs.org/) as an example):
 
     npm install --save marty
 
