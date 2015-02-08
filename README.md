@@ -1,3 +1,5 @@
+![alt text](https://travis-ci.org/ersenal/react-webpack-gulp-starter.svg?branch=master "Travis Build")
+
 **react-webpack-gulp-starter** - One of the billion other custom starters out there.
 
 **Setup**
