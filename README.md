@@ -2,6 +2,12 @@
 
 **react-webpack-gulp-starter** - One of the billion other custom starters out there.
 
+**Features**
+
+- [Gulp](https://github.com/gulpjs/gulp) handles [development](#dev) and [release](#release)
+- ES6 support through [Babel](https://github.com/babel/babel)
+- Test support with [Jest](https://facebook.github.io/jest/)
+
 **Setup**
 
 1. Clone (or download)
@@ -23,7 +29,7 @@ root
 │  ├──index.js - Application main
 │  └──assets
 ├──tests
-│  └──preprocessor.js - JSX preprocessor for tests
+│  └──preprocessor.js - Preprocessor for tests
 └──tasks
    └──webpack
       └──webpack.config.js - Webpack configuration
@@ -31,11 +37,11 @@ root
 
 **Tests**
 
-The starter is set up for [Jest](https://facebook.github.io/jest/) (have a look at `package.json.jest`). Put your tests inside `/tests` and run `npm test`.
+Have a look at `package.json.jest` for the Jest config. Put your tests inside `/tests` and run `npm test`.
 
-*Note: The test preprocessor `/tests/preprocessor.js` is set up to process the files with the .jsx extension as JSX and ignore .css files.*
+*Note: The test preprocessor `/tests/preprocessor.js` is set up to process the files with the .js and .jsx extension and ignore .css files.*
 
-**Development**
+<a name="dev"></a>**Development**
 
 Run `npm run dev`. This command creates a `/dist` folder containing:
 
@@ -44,9 +50,9 @@ Run `npm run dev`. This command creates a `/dist` folder containing:
 
 It also runs [webpack-dev-server](http://webpack.github.io/docs/webpack-dev-server.html) on [localhost:3000](http://localhost:3000) with [react-hot-loader](https://github.com/gaearon/react-hot-loader)
 
-*Note: The JSX loader for webpack `/tasks/webpack/webpack.config.js` is set up to process the files with the .jsx extension.*
+*Note: babel-loader `/tasks/webpack/webpack.config.js` is set up to process the files with the .js and .jsx extension.*
 
-**Release**
+<a name="release"></a>**Release**
 
 Run `npm run release`. This puts a `/dist` folder containing:
 

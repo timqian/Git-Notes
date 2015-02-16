@@ -13,9 +13,9 @@ var common = {
   module: {
     loaders: [
       {
-        test: /\.jsx$/,
-        loaders: ['jsx-loader?insertPragma=React.DOM&harmony'],
-        exclude: /node-modules/
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loaders: ['babel-loader']
       },
       {
         test: /\.css$/,

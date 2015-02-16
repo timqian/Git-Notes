@@ -9,20 +9,28 @@
   },
   "jest": {
     "testDirectoryName": "tests",
-    "testFileExtensions": ["js", "jsx"],
+    "testFileExtensions": [
+      "js",
+      "jsx"
+    ],
     "scriptPreprocessor": "<rootDir>/tests/preprocessor.js",
-    "testPathIgnorePatterns": ["/node_modules/", "preprocessor.js"],
-    "unmockedModulePathPatterns": ["<rootDir>/node_modules/react"]
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "preprocessor.js"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
   },
   "devDependencies": {
+    "babel-core": "^4.0.1",
+    "babel-loader": "^4.0.0",
     "css-loader": "^0.9.1",
     "extract-text-webpack-plugin": "^0.3.8",
     "gulp": "^3.8.10",
     "gulp-util": "^3.0.3",
     "jest-cli": "^0.2.2",
-    "jsx-loader": "^0.12.2",
     "react-hot-loader": "^1.1.4",
-    "react-tools": "^0.12.2",
     "require-dir": "^0.1.0",
     "style-loader": "^0.8.3",
     "webpack": "^1.5.3",
