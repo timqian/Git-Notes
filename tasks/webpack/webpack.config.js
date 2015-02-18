@@ -13,22 +13,25 @@ var common = {
   module: {
     loaders: [
       {
-        test: /\.jsx?$/,
+        test: /src\/.*\.jsx?$/,
         exclude: /node_modules/,
         loaders: ['babel-loader']
-      },
-      {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract("style-loader", "css-loader")
       }
     ]
-  },
-  plugins: [new ExtractTextPlugin("bundle.css")]
+  }
 };
 
 module.exports = {
   release: function() {
     common.debug = false;
+
+    common.module.loaders.push({
+      test: /\.css$/,
+      loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+    });
+
+    common.plugins = common.plugins || [];
+    common.plugins.push(new ExtractTextPlugin("bundle.css"));
     common.plugins.push(new WebPack.optimize.MinChunkSizePlugin({minChunkSize: 10000}));
     common.plugins.push(new WebPack.optimize.LimitChunkCountPlugin({maxChunks: 15}));
     common.plugins.push(new WebPack.optimize.DedupePlugin());
@@ -51,7 +54,14 @@ module.exports = {
     common.debug = true;
     common.entry.unshift('webpack/hot/only-dev-server');
     common.entry.unshift('webpack-dev-server/client?http://0.0.0.0:3000'); // WebpackDevServer host and port
+
     common.module.loaders[0].loaders.unshift('react-hot');
+    common.module.loaders.push({
+      test: /\.css$/,
+      loader: "style-loader!css-loader"
+    });
+
+    common.plugins = common.plugins || [];
     common.plugins.push(new WebPack.HotModuleReplacementPlugin());
     common.plugins.push(new WebPack.NoErrorsPlugin());
 
