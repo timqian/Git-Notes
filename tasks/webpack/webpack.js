@@ -5,7 +5,7 @@ var webpack = require('webpack');
 var config = require('./webpack.config');
 
 gulp.task("webpack", function(callback) {
-  webpack(config.release(), function(err, stats) {
+  webpack(config.dist(), function(err, stats) {
     if(err) {
       throw new gutil.PluginError("webpack", err);
     }

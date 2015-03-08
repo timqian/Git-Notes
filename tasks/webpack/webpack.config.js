@@ -22,7 +22,7 @@ var common = {
 };
 
 module.exports = {
-  release: function() {
+  dist: function() {
     common.debug = false;
 
     common.module.loaders.push({

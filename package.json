@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "gulp dev",
-    "release": "NODE_ENV=production gulp release",
+    "dist": "NODE_ENV=production gulp dist",
     "test": "jest"
   },
   "jest": {
@@ -23,17 +23,17 @@
     ]
   },
   "devDependencies": {
-    "babel-core": "^4.4.6",
-    "babel-loader": "^4.0.0",
+    "babel-core": "^4.7.3",
+    "babel-loader": "^4.1.0",
     "css-loader": "^0.9.1",
     "extract-text-webpack-plugin": "^0.3.8",
     "gulp": "^3.8.11",
     "gulp-util": "^3.0.4",
     "jest-cli": "^0.4.0",
-    "react-hot-loader": "^1.1.5",
+    "react-hot-loader": "^1.1.7",
     "require-dir": "^0.1.0",
     "style-loader": "^0.8.3",
-    "webpack": "^1.6.0",
+    "webpack": "^1.7.2",
     "webpack-dev-server": "^1.7.0"
   },
   "dependencies": {

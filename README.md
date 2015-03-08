@@ -4,7 +4,7 @@
 
 **Features**
 
-- [Gulp](https://github.com/gulpjs/gulp) handles [development](#dev) and [release](#release)
+- [Gulp](https://github.com/gulpjs/gulp) handles [development](#dev) and [distribution](#dist)
 - ES6 support through [Babel](https://github.com/babel/babel)
 - Test support with [Jest](https://facebook.github.io/jest/)
 
@@ -52,9 +52,9 @@ It also runs [webpack-dev-server](http://webpack.github.io/docs/webpack-dev-serv
 
 *Note: babel-loader `/tasks/webpack/webpack.config.js` is set up to process the files with the .js and .jsx extension.*
 
-<a name="release"></a>**Release**
+<a name="dist"></a>**Distribution**
 
-Run `npm run release`. This puts a `/dist` folder containing:
+Run `npm run dist`. This puts a `/dist` folder containing:
 
 - `/src/index.html`
 - All the assets under `/src/assets`
