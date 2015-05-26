@@ -1,4 +1,4 @@
-## Git Notes: take notes in the browser and syn to the cloud
+## Git Notes: take notes in the browser and sync to the cloud
 
 Make use of leancloud,
 
