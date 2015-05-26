@@ -37,6 +37,8 @@
     "webpack-dev-server": "^1.7.0"
   },
   "dependencies": {
-    "react": "^0.13.0"
+    "marty": "^0.9.16",
+    "react": "^0.13.0",
+    "react-router": "^0.13.3"
   }
 }
