@@ -2,6 +2,6 @@
 
 Make use of leancloud,
 
-Make use of React and marty,
+Make use of React and marty.
 
 
