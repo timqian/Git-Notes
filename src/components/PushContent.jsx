@@ -7,9 +7,10 @@ var PushContent = React.createClass({
 	render: function() {
 		return (
 			<div>
-				<input ref="pushTitle" placeholder="TITLE"/>
-				<textarea ref="pushText" placeholder="text"/>
-				<button onClick={this._onPush}>push</button>
+				<button className="button-primary u-pull-right" onClick={this._onPush}>push</button>
+				<input type="text" className="u-pull-left" ref="pushTitle" placeholder="TITLE"/>
+				<textarea className="u-full-width" ref="pushText" placeholder="text"/>
+
 			</div>
 		);
 	},

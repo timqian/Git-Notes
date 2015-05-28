@@ -1,6 +1,8 @@
 "use strict";
 
-require('./components/App.css'); //插入css
+require('./components/normalize.css'); //插入css
+require('./components/skeleton.css'); //插入css
+require('./components/costomize.css'); //插入css
 
 var React = require("react");
 var Router = require("react-router");

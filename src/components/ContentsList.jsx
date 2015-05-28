@@ -5,6 +5,32 @@ var Marty = require('marty');
 var ContentsListStore = require('../stores/ContentsListStore');
 var ContentsListActions = require('../actions/ContentsListActions');
 
+
+var ContentsList = React.createClass({
+	render: function() {
+		console.log("props in view:");
+		console.log(this.props.contentsList);
+
+		var contentNodes = this.props.contentsList.map(function(content, index){
+			return (
+				<Content title={content.title} text={content.text} date={content.updatedAt} key={index}/>
+			);
+		});
+
+		return (
+			<div>
+				<button className="u-pull-right button-primary" onClick={this._onClick}>Show all the posts</button>
+				{contentNodes}
+			</div>
+		);
+	},
+
+	_onClick: function () {  //不知道为什么，不能直接在上面用 ContentsListActions.getAllContents();
+		ContentsListActions.getAllContents();
+	}
+});
+
+
 var Content = React.createClass({
 	render: function() {
 		return (
@@ -20,30 +46,6 @@ var Content = React.createClass({
 				</p>
 			</div>
 		);
-	}
-});
-
-var ContentsList = React.createClass({
-	render: function() {
-		console.log("props in view:");
-		console.log(this.props.contentsList);
-
-		var contentNodes = this.props.contentsList.map(function(content, index){
-			return (
-				<Content title={content.title} text={content.text} date={content.updatedAt} key={index}/>
-			);
-		});
-
-		return (
-			<div>
-				<button onClick={this._onClick}>Show all the posts</button>
-				{contentNodes}
-			</div>
-		);
-	},
-
-	_onClick: function () {  //不知道为什么，不能直接在上面用 ContentsListActions.getAllContents();
-		ContentsListActions.getAllContents();
 	}
 });
 

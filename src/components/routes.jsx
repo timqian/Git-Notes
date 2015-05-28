@@ -10,13 +10,13 @@ var ContentsList = require('./ContentsList');
 var App = React.createClass({
   render: function() {
     return (
-    	<div>
-    		<header>
-    			<ul>
-    				<li><Router.Link to="pushContent">Compose</Router.Link></li>
-    				<li><Router.Link to="contentsList">View Contents</Router.Link></li>
+    	<div className="container">
+    		<nav className="navbar">
+    			<ul className="navbar-list">
+    				<li className="navbar-item"><Router.Link className="navbar-link" to="pushContent">Compose</Router.Link></li>
+    				<li className="navbar-item"><Router.Link className="navbar-link" to="contentsList">View Contents</Router.Link></li>
     			</ul>
-    		</header>
+    		</nav>
 
     		<Router.RouteHandler/>
 
@@ -31,5 +31,6 @@ var routes = (
 		<Router.Route name="contentsList" handler={ContentsList}/>
 	</Router.Route>
 );
+
 
 module.exports = routes;
