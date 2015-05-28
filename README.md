@@ -4,4 +4,15 @@ Make use of leancloud,
 
 Make use of React and marty.
 
+## usage
 
+view at http://timqian.com/Git-Notes
+
+## develop
+
+	npm install
+	npm ren dev
+
+## start templete:
+
+https://github.com/ersenal/react-webpack-gulp-starter
